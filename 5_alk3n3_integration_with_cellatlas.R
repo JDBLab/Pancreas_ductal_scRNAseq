@@ -62,35 +62,35 @@ VlnPlot(object = muraro.dat, features = c("nFeature_RNA", "nCount_RNA"), ncol = 
 # Data Preprocessing for alk3n3 dataset
 # STEP 1: Create a integrated Seurat Obj of the alk3n3 datasets
 
-# Create Seurat obj: HP2300
-HP2300.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HP2300/filtered_feature_bc_matrix")
-HP2300 <- CreateSeuratObject(counts = HP2300.data, 
-                             project = "HP2300"
+# Create Seurat obj: HPD1
+HPD1.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HPD1/filtered_feature_bc_matrix")
+HPD1 <- CreateSeuratObject(counts = HPD1.data, 
+                             project = "HPD1"
 )
 
 # Sample specific Metadata addition
-HP2300$sample <- "HP2300"
+HPD1$sample <- "HPD1"
 
-# Create Seurat obj: HP5294
-HP2304.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HP2304/filtered_feature_bc_matrix")
-HP2304 <- CreateSeuratObject(counts = HP2304.data,
-                             project = "HP2304"
+# Create Seurat obj: HPD3
+HPD2.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HPD2/filtered_feature_bc_matrix")
+HPD2 <- CreateSeuratObject(counts = HPD2.data,
+                             project = "HPD2"
 )
 
 # Sample specific Metadata addition
-HP2304$sample <- "HP2304"
+HPD2$sample <- "HPD2"
 
-# Create Seurat obj: HP5294
-HP5294.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HP5294/filtered_feature_bc_matrix")
-HP5294 <- CreateSeuratObject(counts = HP5294.data,
-                             project = "HP5294"
+# Create Seurat obj: HPD3
+HPD3.data <- Read10X(data.dir = "C:/Users/mxq52/Box/Fahd Shared JUAN/Dominguez-Bendala, Juan scRNAseq prj/10x Gen input files/HPD3/filtered_feature_bc_matrix")
+HPD3 <- CreateSeuratObject(counts = HPD3.data,
+                             project = "HPD3"
 )
 
 # Sample specific Metadata addition
-HP5294$sample <- "HP5294"
+HPD3$sample <- "HPD3"
 
 # Merge refrence-qadir datasets
-alk3n3.combined <- merge(x = HP2300, y = c(HP2304, HP5294), add.cell.ids = c("HP2300", "HP2304", "HP5294"), project = "ALK3n3")
+alk3n3.combined <- merge(x = HPD1, y = c(HPD2, HPD3), add.cell.ids = c("HPD1", "HPD2", "HPD3"), project = "ALK3n3")
 alk3n3.combined
 
 #Experiment specific Metadata addition
