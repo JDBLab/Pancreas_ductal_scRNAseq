@@ -52,9 +52,9 @@ under construction
 Under construction
 
 ### Hardware and OS environment for running Seurat and Monocle
-Processor: Intel Core i7-6700 CPU (4cores x 8threads)
-RAM: 32GB DDR3
-OS: Windows 10 Enterprise (x64 bit)
+1. Processor: Intel Core i7-6700 CPU (4cores x 8threads)
+2. RAM: 32GB DDR3
+3. OS: Windows 10 Enterprise (x64 bit)
 
 ### Hardware and OS environment for running Velocyto
 Under construction
