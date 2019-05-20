@@ -23,6 +23,7 @@ install.packages("cowplot")
 install.packages('ggrepel')
 install.packages("R.utils")
 install.packages("gridExtra")
+install.packages("plot_ly")
 
 # Install the scRNAseq analysis package Seurat
 install.packages('Seurat') #This installs Seurat v3.0.0 as of 5/20/2019, if Seurat is updated direct installation to v3.0.0
@@ -45,6 +46,7 @@ library(ggrepel)
 library(dplyr)
 library(Seurat)
 library(monocle)
+library(plot_ly)
 
 # CONFIRM CORRECT INSTALL ####
 # Confirm package version of Seurat and Monocle
