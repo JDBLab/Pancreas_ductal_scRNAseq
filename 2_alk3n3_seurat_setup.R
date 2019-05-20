@@ -10,7 +10,6 @@
 # LOAD LIBRARIES ####
 # Restart Rstudio or R
 # Run the following code once you have Seurat installed
-
 library(ggplot2)
 library(cowplot)
 library(Matrix)
@@ -19,8 +18,9 @@ library(ggrepel)
 library(dplyr)
 library(Seurat)
 library(monocle)
+library(plot_ly)
 
-# CONFIRM CORRECT LOADING ####
+# CONFIRM CORRECT INSTALL ####
 # Confirm package version of Seurat and Monocle
 packageVersion("Seurat")
 packageVersion("monocle")
