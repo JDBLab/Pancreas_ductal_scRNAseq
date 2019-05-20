@@ -1,7 +1,7 @@
 # DESCRIPTION ####
 # The following code ASSUMES all dependencies in R  have been installed and previous R code have been run successfully see file(s): 
-# 1_environment_setup_05202019.R 
-# 2_alk3n3_seurat_object_setup_05202019.R
+# 1_environment_setup.R 
+# 2_alk3n3_seurat_setup.R
 # The purpose of this code is to analyze n=3 data, as a Seurat object.
 
 # R v3.5.3 (x64 bit) and RStudio v1.2.1335 (x64 bit) were used for running this code (see readme on how to install)
