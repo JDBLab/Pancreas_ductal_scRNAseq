@@ -1,6 +1,6 @@
 # DESCRIPTION ####
 # The following code ASSUMES all dependencies in R  have been installed See file(s): 
-# 1_environment_setup_05202019.R)
+# 1_environment_setup.R)
 # The purpose of this code is to setup+normalize+threshold data, as a Seurat object.
 
 # R v3.5.3 (x64 bit) and RStudio v1.2.1335 (x64 bit) were used for running this code (see readme on how to install)
