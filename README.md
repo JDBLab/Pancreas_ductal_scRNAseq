@@ -29,8 +29,9 @@ In order to understand where our cells map against other pancretic cells, we map
 ### R and R's integrated developmental environment RStudio:
 1. [R v3.5.3 (x64 bit)](https://cran.r-project.org/bin/windows/base/old/)
 2. [RStudio v1.2.1335 (x64 bit)](https://www.rstudio.com/products/rstudio/download/)
-3. [Tutorial for R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
-4. [Tutorial for RStudio](https://resources.rstudio.com/)
+3. [RTools v3.3.X](https://cran.r-project.org/bin/windows/Rtools/index.html)
+4. [Tutorial for R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
+5. [Tutorial for RStudio](https://resources.rstudio.com/)
 
 ### scRNAseq analysis pipeline SEURAT developed by the Satija lab:
 1. [Source code for Seurat v3.0.0](https://cran.r-project.org/web/packages/Seurat/index.html)
