@@ -11,6 +11,24 @@
 # Seurat is a multimodal single Cell RNA seq analysis algorithm created by
 # The Satija Lab. For more information please see: https://satijalab.org/seurat/
 
+# LOAD LIBRARIES ####
+# Restart Rstudio or R
+# Run the following code once you have Seurat installed
+library(ggplot2)
+library(cowplot)
+library(Matrix)
+library(ggridges)
+library(ggrepel)
+library(dplyr)
+library(Seurat)
+library(monocle)
+library(plot_ly)
+
+# CONFIRM CORRECT INSTALL ####
+# Confirm package version of Seurat and Monocle
+packageVersion("Seurat")
+packageVersion("monocle")
+
 # INTERACTIVE 3D tSNE PLOTING ####
 # Plotting all cells in 3D, having the same color combinations for each celll as in the 2D tSNE analysis
 plotting.data <- FetchData(object = yourseuratobject, vars = c("tSNE_1", "tSNE_2", "tSNE_3", "seurat_clusters"))
