@@ -10,6 +10,24 @@
 # Seurat is a multimodal single Cell RNA seq analysis algorithm created by
 # The Satija Lab. For more information please see: https://satijalab.org/seurat/
 
+# LOAD LIBRARIES ####
+# Restart Rstudio or R
+# Run the following code once you have Seurat installed
+library(ggplot2)
+library(cowplot)
+library(Matrix)
+library(ggridges)
+library(ggrepel)
+library(dplyr)
+library(Seurat)
+library(monocle)
+library(plot_ly)
+
+# CONFIRM CORRECT INSTALL ####
+# Confirm package version of Seurat and Monocle
+packageVersion("Seurat")
+packageVersion("monocle")
+
 # OBJECT SETUP AND NORMALIZATION####
 # Load the Human Pancreas Single-cell RNAseq Atlas.
 pancreas.data <- readRDS(file = "C:/Users/mxq52/Box/FAHD SHARED JDB-RLP/NEW R files/pancreas_v3_files/pancreas_expression_matrix.rds")
