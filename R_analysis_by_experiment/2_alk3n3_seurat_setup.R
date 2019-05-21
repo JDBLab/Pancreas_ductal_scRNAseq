@@ -77,7 +77,8 @@ alk3n3.combined <- FindVariableFeatures(object = alk3n3.combined, selection.meth
 top10 <- head(x = VariableFeatures(object = alk3n3.combined), 10)
 
 # Ploting variable features with and without labels
-VariableFeaturePlot(object = alk3n3.combined)
+plot1 <- VariableFeaturePlot(object = alk3n3.combined)
+plot1
 LabelPoints(plot = plot1, points = top10, repel = TRUE)
 
 # Data scaling against percentage of expressed mitochondrial genes
