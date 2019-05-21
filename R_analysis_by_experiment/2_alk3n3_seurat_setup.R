@@ -18,7 +18,7 @@ library(ggrepel)
 library(dplyr)
 library(Seurat)
 library(monocle)
-library(plot_ly)
+library(plotly)
 
 # CONFIRM CORRECT INSTALL ####
 # Confirm package version of Seurat and Monocle
