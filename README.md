@@ -54,7 +54,7 @@ under construction.
 2. RAM: 25GB
 3. OS: CentOS 6.5
 
-Hardware integrated into the Pegasus Supercomputer at the University of Miami: http://ccs.miami.edu/ac/service/pegasus/ 
+Hardware integrated into the [Pegasus Supercomputer](http://ccs.miami.edu/ac/service/pegasus/) at the University of Miami
 
 ### Hardware and OS environment for running Seurat and Monocle
 1. Processor: Intel Core i7-6700 CPU (4cores x 8threads)
