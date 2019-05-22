@@ -46,7 +46,11 @@ In order to understand where our cells map against other pancretic cells, we map
 2. [Tutorial for plotly](https://plot.ly/r/)
 
 ## Setting up the right environment
-under construction.
+If you are performeing this kind of scRNAseq analysis for the first time, please go over the excellent Seurat v3.0.0 [tutorial](https://satijalab.org/seurat/v3.0/pbmc3k_tutorial.html). We have made an effort to write the code with as much commenting/annotation (lines of text explaining what the code is for) as possible, so that the begginer can perform analysis as easily as an advanced user. The code has been written in sucha a manner, that you should be able to install R and Rstudio in a freshly formatted computing environment and still be able to perform the analysis, without needing 'dependencies' and other prerequisites. 
+
+Once you have installed R and RStudio, copy script from the [first file](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R) in the Pancreas_ductal_scRNAseq/R_analysis_by_experiment/ folder. After this run and install all dependencies, and then load these packages allowing for analysis. 
+
+If you need help understanding how commands are run in R  use the [ctrl + enter] command or please visit [here](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R).
 
 ## Computing environment
 ### Hardware and OS environment for running Cellranger
