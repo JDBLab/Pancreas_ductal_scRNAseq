@@ -34,5 +34,5 @@ A set of code which allows for the integration of the alk3n3 dataset into a isle
 ### 6_alk3n3_integration_visualization.R:
 A set of code allowing for the visualization of the integrative analysis performed previously.
 
-#### 7_alk3n3_integration_3Dvisualization.R:
+### 7_alk3n3_integration_3Dvisualization.R:
 A set of code used to allow the viewing of 3D tSNE visuals using the RShiny derived package plotly.
