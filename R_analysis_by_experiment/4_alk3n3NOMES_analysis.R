@@ -52,7 +52,8 @@ alk3n3.combined.nomes <- FindVariableFeatures(object = alk3n3.combined.nomes, se
 top10 <- head(x = VariableFeatures(object = alk3n3.combined.nomes), 10)
 
 # plot variable features with and without labels
-VariableFeaturePlot(object = alk3n3.combined.nomes)
+plot1 <- VariableFeaturePlot(object = alk3n3.combined.nomes)
+plot1
 LabelPoints(plot = plot1, points = top10, repel = TRUE)
 
 # NOTE: This process can take a long time for big datasets, comment out for expediency. More
