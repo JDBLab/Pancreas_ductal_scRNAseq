@@ -50,7 +50,7 @@ If you are performeing this kind of scRNAseq analysis for the first time, please
 
 Once you have installed R and RStudio, copy script from the [first file](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R) in the Pancreas_ductal_scRNAseq/R_analysis_by_experiment/ folder. After this run and install all dependencies, and then load these packages allowing for analysis. 
 
-If you need help understanding how commands are run in R  use the [ctrl + enter] command or please visit [here](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R).
+If you need help understanding how commands are run in R  use the [ctrl + enter] command or please visit [here](https://support.rstudio.com/hc/en-us/articles/200484448-Editing-and-Executing-Code).
 
 ## Computing environment
 ### Hardware and OS environment for running Cellranger
