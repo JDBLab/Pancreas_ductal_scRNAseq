@@ -139,19 +139,12 @@ FeaturePlot(object = alk3n3.combined.nomes,
 # Atleast 50% of cells express that gene
 # p value < 0.001
 # find markers for every cluster compared to all remaining cells, report only the positive ones
-alk3n3.combined.markers.nomes <- FindAllMarkers(object = alk3n3.combined.nomes, only.pos = TRUE, min.pct = 0.5, logfc.threshold = 0.7)
+alk3n3.combined.markers.nomes <- FindAllMarkers(object = alk3n3.combined.nomes, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.7)
 alk3n3.combined.markers.nomes %>% group_by(cluster) %>% top_n(n = 2, wt = avg_logFC)
 write.csv(alk3n3.combined.markers.nomes, 'alk3n3.combined.markers.nomes.csv')
 
 # Heatmap of all clusters, naming is from 0-12 
 # Color Pallette https://htmlcolorcodes.com/
-# Define an order of cluster identities, remember after this step-
-# cluster re-assignment occurs, which re-assigns clustering in my_levels
-my_levels <- c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-
-# Re-level object@ident
-alk3n3.combined.nomes@active.ident <- factor(x = alk3n3.combined.nomes@active.ident, levels = my_levels)
-
 # Create a heatmap of top 10 most differentially expressed genes
 top20 <- alk3n3.combined.markers.nomes %>% group_by(cluster) %>% top_n(n = 20, wt = avg_logFC) 
 DoHeatmap(object = alk3n3.combined.nomes, 
@@ -164,13 +157,6 @@ DoHeatmap(object = alk3n3.combined.nomes,
 # Dot plots - the size of the dot corresponds to the percentage of cells
 # expressing the gene in each cluster. The color represents the average
 # expression level
-# Define an order of cluster identities this works, remember after this step-
-# cluster re-assignment occurs, which re-assigns clustering in my_levels
-my_levels <- c(7, 6, 4, 3, 1, 2, 5, 10, 8, 0, 9, 11, 12)
-
-# Re-level object@ident
-alk3n3.combined.nomes@active.ident <- factor(x = alk3n3.combined.nomes@active.ident, levels = my_levels)
-
 #Changing gene combinaion changes genes on the dotplot
 feature.plot <- c("CELA2B", "PGA5",
                   "CPA1", "CELA3B",
