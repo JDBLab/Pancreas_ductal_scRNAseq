@@ -50,7 +50,10 @@ under construction.
 
 ## Computing environment
 ### Hardware and OS environment for running Cellranger
-Under construction
+1. Processor: Intel Sandy Bridge E5-2670 (16cores x 16 threads)
+2. RAM: 25GB
+3. OS: CentOS 6.5
+Hardware integrated into the Pegasus Supercomputer at the University of Miami: http://ccs.miami.edu/ac/service/pegasus/ 
 
 ### Hardware and OS environment for running Seurat and Monocle
 1. Processor: Intel Core i7-6700 CPU (4cores x 8threads)
