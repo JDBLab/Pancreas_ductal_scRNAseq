@@ -42,8 +42,8 @@ In order to understand where our cells map against other pancretic cells, we map
 2. [Tutorial for Monocle](http://cole-trapnell-lab.github.io/monocle-release/docs/#constructing-single-cell-trajectories)
 
 ### 3D tSNE analysis and Gene expression plotting
-1. [Source code for plot_ly](https://cran.r-project.org/web/packages/plotly/index.html)
-2. [Tutorial for plot_ly](https://plot.ly/r/)
+1. [Source code for plotly](https://cran.r-project.org/web/packages/plotly/index.html)
+2. [Tutorial for plotly](https://plot.ly/r/)
 
 ## Setting up the right environment
 under construction
