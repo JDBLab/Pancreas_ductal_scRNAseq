@@ -46,7 +46,7 @@ In order to understand where our cells map against other pancretic cells, we map
 2. [Tutorial for plotly](https://plot.ly/r/)
 
 ## Setting up the right environment
-under construction
+under construction.
 
 ## Computing environment
 ### Hardware and OS environment for running Cellranger
