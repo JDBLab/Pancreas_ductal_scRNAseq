@@ -58,7 +58,7 @@ If you need help understanding how commands are run in R  (using the the [ctrl +
 2. RAM: 25GB
 3. OS: CentOS 6.5
 
-Hardware integrated into the [Pegasus Supercomputer](http://ccs.miami.edu/ac/service/pegasus/) at the University of Miami
+Hardware integrated into the [Pegasus Supercomputer](http://ccs.miami.edu/ac/service/pegasus/) at the [University of Miami](https://welcome.miami.edu/)
 
 ### Hardware and OS environment for running Seurat and Monocle
 1. Processor: Intel Core i7-6700 CPU (4cores x 8threads)
