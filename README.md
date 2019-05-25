@@ -49,7 +49,7 @@ In order to understand where our cells map against other pancretic cells, we map
 1. Install R
 2. Install Rstudio
 3. You are ready to rumble in the jungle. 
-4. Go to : Pancreas_ductal_scRNAseq/R_analysis_by_experiment/1_environment_setup.R and run as discussed
+4. Go to : Pancreas_ductal_scRNAseq/R_analysis_by_experiment/1_environment_setup.R (or click [here](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R) and run as discussed
 5. If you run into problems, please open an issue you can do this by going to 'issues' and clicking on the 'new issue' icon. We will help you replicate our analysis! Do not fear single cell analysis!
 
 ## Computing environment
