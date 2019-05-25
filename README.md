@@ -49,12 +49,19 @@ In order to understand where our cells map against other pancretic cells, we map
 1. Install R
 2. Install Rstudio
 3. You are ready to rumble in the jungle. 
-4. Go to : Pancreas_ductal_scRNAseq/R_analysis_by_experiment/1_environment_setup.R (or click [here](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R) and run as discussed
-5. If you run into problems, please open an issue you can do this by going to 'issues' and clicking on the 'new issue' icon. We will help you replicate our analysis! Do not fear single cell analysis!
+4. Once you have installed R and RStudio, copy script from the [first file](https://github.com/JDBLab/Pancreas_ductal_scRNAseq/blob/master/R_analysis_by_experiment/1_environment_setup.R) in the Pancreas_ductal_scRNAseq/R_analysis_by_experiment/ folder. After this run and install all dependencies, and then load these packages allowing for analysis. 
+5. If you need help understanding how commands are run in R  use the [ctrl + enter] command or please visit [here](https://support.rstudio.com/hc/en-us/articles/200484448-Editing-and-Executing-Code).
+6. If you run into problems, please open a new issue, you can do this by going to 'issues' and clicking on the 'new issue' icon. We will help you replicate our analysis! Do not fear single cell analysis!
 
 ## Computing environment
 ### Hardware and OS environment for running Cellranger
-Under construction
+#### Environment 1
+1. Processor: Intel Sandy Bridge E5-2670 (16cores x 16 threads)
+2. RAM: 25GB
+3. OS: CentOS 6.5
+
+#### Environment 2
+1. Hardware integrated into the [Pegasus Supercomputing array](http://ccs.miami.edu/ac/service/pegasus/) at the [University of Miami](https://welcome.miami.edu/) 
 
 ### Hardware and OS environment for running Seurat and Monocle
 #### Environment 1
