@@ -64,7 +64,7 @@ In order to understand where our cells map against other pancretic cells, we map
 1. Hardware integrated into the [Pegasus Supercomputing array](http://ccs.miami.edu/ac/service/pegasus/) at the [University of Miami](https://welcome.miami.edu/) 
 
 ### Hardware and OS environment for running Seurat and Monocle
-### Analysis was performed/repliated on each of these computing systems, and ran optimally.
+### Analysis was performed/replicated on each of these computing systems, and ran optimally.
 #### Environment 1
 1. Processor: Intel Core i7-6700 CPU (4cores x 8threads)
 2. RAM: 32GB DDR3
