@@ -127,6 +127,7 @@ Under construction
 2. The JDB Lab - [Github](https://github.com/JDBLab) - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala)
 3. Muhammad Saad Sadiq - [Github](https://github.com/msaadsadiq) - [University of Miami](http://www.coe.miami.edu/key-contacts/name/sadiq-saad/) - to contact please [Email](mailto:mss255@miami.edu)
 4. Dr. Tony Griswold PhD. - [Github](https://github.com/agriswold76) - [University of Miami](http://medgen.med.miami.edu/education/msgm/meet-the-faculty) - to contact please [Email](mailto:agriswold@med.miami.edu)
+5. Dr. Dave Sant PhD. - [University of Utah](https://medicine.utah.edu/dbmi/) - [to contact please [Email](mailto:davidwsant@gmail.com)
 
 # Lead Contacts
 1. Dr. Juan Dominguez-Bendala PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala) - to contact please [Email](mailto:jdominguez2@med.miami.edu)
