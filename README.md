@@ -3,10 +3,11 @@
 ## What is this?
 This repository contains coding scripts utilized for the analysis performed in the "Single cell resolution analysis of the human pancreatic ductal progenitor cell niche" publication (Qadir/Alvarez-Cubela et. al, 2019). The purpose of providing the code here is to allow for transparency and robust data-analysis reproducibility. Most of the steps used for data analysis and visualization have been optimised for an average computing environment (for the year 2019). Some analyses however, require a high-performace computing environment (see computing environment). The methodology has already been described extensively in the manuscript. However, this analysis relies heavily on scRNAseq analysis algorithms developed by the Satija lab, namely Seurat [(Butler et al., 2018: Nature Biotechnology;](https://www.nature.com/articles/nbt.4096) [Stuart et al., 2018: bioRxiv)](https://www.biorxiv.org/content/10.1101/460147v1)(for a complete list of dependencies and code utilized see analysis & visualization programs).
 
-### What is alk3n3?
+## What is alk3n3?
 This data is derived from the scRNAseq of ALK3Bright+ cells isolated from n = 3 independant human donor pancreas. These n = 3 files have been compiled into 1 dataset reffered to as the alk3n3 dataset.
 
-## Downloading Data files
+## How can I use this data, and where can I find it?
+### Downloading Data files
 Data files utilized in this analysis have been deposited in the [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/), gene expression data repository at the NIH. Data are part of the GSE131886 high-thoroughput sequencing repository and can be found [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131886). Please note, (unless you are a reviewer or journal editor) since this manuscript is currently under review, GSE raw data files will not be present for public download. If you would like to download the data, please email the project leader for requests. 
 
 ### Data sub-structure
