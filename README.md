@@ -1,7 +1,7 @@
 # Single cell resolution analysis of the human pancreatic ductal progenitor cell niche
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/50833242/58594442-a128d580-823b-11e9-8daf-7bf3966b74b0.jpg">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/50833242/58594818-bfdb9c00-823c-11e9-9be4-7bfccc03efc5.jpeg">
 </p>
 
 # Table of Contents
