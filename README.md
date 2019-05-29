@@ -129,5 +129,5 @@ Under construction
 4. Dr. Tony Griswold PhD. - [Github](https://github.com/agriswold76) - [University of Miami](http://medgen.med.miami.edu/education/msgm/meet-the-faculty)
 
 # Lead Contacts
-1. Dr. Juan Dominguez-Bendala PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala) 
+1. Dr. Juan Dominguez-Bendala PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala) [Email](<jdominguez2@med.miami.edu>)
 2. Dr. Ricardo Pastori PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/ricardo-pastori)
