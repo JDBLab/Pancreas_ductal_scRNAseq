@@ -1,9 +1,9 @@
 # Single cell resolution analysis of the human pancreatic ductal progenitor cell niche
 
 # Table of Contents
-- [What is this?](##What%20is%20this?)
-- [What is alk3n3?](##What%20is%20alk3n3?)
-- [How can I use this data, and where can I find it?](##How%20can%20I%20use%20this%20data,%20and%20where%20can%20I%20find%20it?)
+- [What is this?](##what%20is%20this?)
+- [What is alk3n3?](##what%20is%20alk3n3?)
+- [How can I use this data, and where can I find it?](##how%20can%20I%20use%20this%20data,%20and%20where%20can%20I%20find%20it?)
 
 <!-- toc -->
 
