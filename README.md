@@ -86,3 +86,9 @@ In order to understand where our cells map against other pancretic cells, we map
 
 ### Hardware and OS environment for running Velocyto
 Under construction
+
+# Contributors
+Mirza Muhammad Fahd Qadir - [Github](https://github.com/Dragonmasterx87) - [University of Miami](http://biomed.med.miami.edu/graduate-programs/molecular-cell-and-developmental-biology/student-profiles)
+The JDB Lab - [Github](https://github.com/JDBLab)
+Muhammad Saad Sadiq - [Github](https://github.com/msaadsadiq) - University of Miami](http://www.coe.miami.edu/key-contacts/name/sadiq-saad/)
+Tony Griswold - [Github](https://github.com/agriswold76) - [University of Miami](http://medgen.med.miami.edu/education/msgm/meet-the-faculty)
