@@ -89,6 +89,6 @@ Under construction
 
 # Contributors
 1. Mirza Muhammad Fahd Qadir - [Github](https://github.com/Dragonmasterx87) - [University of Miami](http://biomed.med.miami.edu/graduate-programs/molecular-cell-and-developmental-biology/student-profiles)
-2. The JDB Lab - [Github](https://github.com/JDBLab)
-3. Muhammad Saad Sadiq - [Github](https://github.com/msaadsadiq) - University of Miami](http://www.coe.miami.edu/key-contacts/name/sadiq-saad/)
+2. The JDB Lab - [Github](https://github.com/JDBLab) - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala)
+3. Muhammad Saad Sadiq - [Github](https://github.com/msaadsadiq) - [University of Miami](http://www.coe.miami.edu/key-contacts/name/sadiq-saad/)
 4. Tony Griswold - [Github](https://github.com/agriswold76) - [University of Miami](http://medgen.med.miami.edu/education/msgm/meet-the-faculty)
