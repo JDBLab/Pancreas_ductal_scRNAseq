@@ -1,5 +1,34 @@
 # Single cell resolution analysis of the human pancreatic ductal progenitor cell niche
 
+- [What is alk3n3?](#what-is-alk3n3)
+- [How can I use this data, and where can I find it?](#how-can-i-use-this-data-and-where-can-i-find-it)
+	- [Downloading Data files](#downloading-data-files)
+	- [Data sub-structure](#data-sub-structure)
+		- [FASTQ files](#fastq-files)
+		- [Cellranger output (processed gene-counts of single cells/barcodes)](#cellranger-output-processed-gene-counts-of-single-cellsbarcodes)
+		- [Data analysis of ALK3n3 dataset](#data-analysis-of-alk3n3-dataset)
+		- [Data analysis of integrated-dataset](#data-analysis-of-integrated-dataset)
+- [Analysis and visualization programs](#analysis-and-visualization-programs)
+	- [Cellranger software from 10X Genomics:](#cellranger-software-from-10x-genomics)
+	- [R and R's integrated developmental environment RStudio:](#r-and-rs-integrated-developmental-environment-rstudio)
+	- [scRNAseq analysis pipeline SEURAT developed by the Satija lab:](#scrnaseq-analysis-pipeline-seurat-developed-by-the-satija-lab)
+	- [Pseudotemporal gene expression analysis using Monocle developed by the Trapnell Lab:](#pseudotemporal-gene-expression-analysis-using-monocle-developed-by-the-trapnell-lab)
+	- [3D tSNE analysis and Gene expression plotting](#3d-tsne-analysis-and-gene-expression-plotting)
+- [Setting up the right environment](#setting-up-the-right-environment)
+- [Computing environment](#computing-environment)
+	- [Hardware and OS environment for running Cellranger](#hardware-and-os-environment-for-running-cellranger)
+		- [Environment 1](#environment-1)
+		- [Environment 2](#environment-2)
+	- [Hardware and OS environment for running Seurat and Monocle](#hardware-and-os-environment-for-running-seurat-and-monocle)
+	- [Analysis was performed/replicated on each of these computing systems, and ran optimally.](#analysis-was-performedreplicated-on-each-of-these-computing-systems-and-ran-optimally)
+		- [Environment 1](#environment-1-1)
+		- [Environment 2](#environment-2-1)
+		- [Environment 2](#environment-2-2)
+	- [Hardware and OS environment for running Velocyto](#hardware-and-os-environment-for-running-velocyto)
+- [Contributors](#contributors)
+- [Lead Contacts](#lead-contacts)
+
+
 ## What is this?
 This repository contains coding scripts utilized for the analysis performed in the "Single cell resolution analysis of the human pancreatic ductal progenitor cell niche" publication (Qadir/Alvarez-Cubela et. al, 2019). The purpose of providing the code here is to allow for transparency and robust data-analysis reproducibility. Most of the steps used for data analysis and visualization have been optimised for an average computing environment (for the year 2019). Some analyses however, require a high-performace computing environment (see computing environment). The methodology has already been described extensively in the manuscript. However, this analysis relies heavily on powerful scRNAseq analysis algorithms developed by the [Satija lab](https://satijalab.org/), namely [Seurat](https://satijalab.org/seurat/) [(Butler et al., 2018: Nature Biotechnology;](https://www.nature.com/articles/nbt.4096) [Stuart et al., 2018: bioRxiv)](https://www.biorxiv.org/content/10.1101/460147v1) (for a complete list of dependencies and code utilized see analysis & visualization programs).
 
