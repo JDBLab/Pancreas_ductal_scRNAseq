@@ -5,7 +5,7 @@
 - [What is alk3n3?](##What%20is%20alk3n3?)
 - [How can I use this data, and where can I find it?](##How%20can%20I%20use%20this%20data,%20and%20where%20can%20I%20find%20it?)
 
-
+<!-- toc -->
 
 ## What is this?
 This repository contains coding scripts utilized for the analysis performed in the "Single cell resolution analysis of the human pancreatic ductal progenitor cell niche" publication (Qadir/Alvarez-Cubela et. al, 2019). The purpose of providing the code here is to allow for transparency and robust data-analysis reproducibility. Most of the steps used for data analysis and visualization have been optimised for an average computing environment (for the year 2019). Some analyses however, require a high-performace computing environment (see computing environment). The methodology has already been described extensively in the manuscript. However, this analysis relies heavily on powerful scRNAseq analysis algorithms developed by the [Satija lab](https://satijalab.org/), namely [Seurat](https://satijalab.org/seurat/) [(Butler et al., 2018: Nature Biotechnology;](https://www.nature.com/articles/nbt.4096) [Stuart et al., 2018: bioRxiv)](https://www.biorxiv.org/content/10.1101/460147v1) (for a complete list of dependencies and code utilized see analysis & visualization programs).
