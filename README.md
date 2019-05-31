@@ -132,3 +132,16 @@ Under construction
 # Lead Contacts
 1. Dr. Juan Dominguez-Bendala PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala) - to contact please [Email](mailto:jdominguez2@med.miami.edu)
 2. Dr. Ricardo Pastori PhD. - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/ricardo-pastori) - to contact please [Email](mailto:rpastori@med.miami.edu)
+
+# Acknowledgements
+1. Diabetes Research Institute Foundation (DRIF)
+2. The Inserra family
+3. The Fred and Mabel R. Parks Foundation
+4. The Tonkinson Foundation
+5. ADA Grant #1-19-ICTS-078
+6. NIH Grant #1R43DK105655-01
+7. NIH Grant #2R44DK105655-02
+8. NIH/NIDDK HIRN Grant #U01DK120393 (These studies are part of this grant)
+9. IIE Fulbright
+
+## If this was useful to you please dont forget to cite, star and fork this repository.
