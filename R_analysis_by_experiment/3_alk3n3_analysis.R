@@ -19,6 +19,7 @@ library(ggrepel)
 library(dplyr)
 library(Seurat)
 library(monocle)
+library(clustree)
 library(plot_ly)
 
 # CONFIRM CORRECT INSTALL ####
@@ -28,61 +29,98 @@ packageVersion("monocle")
 
 # LINEAR DIMENSIONALITY REDUCTION ####
 # this Seurat object was created and normalized using code outlined in: 2_alk3n3_seurat_object_setup_05202019.R
-# This Seurat object is called alk3n3.combined
+# This Seurat object is called alk3n3.integrated
 # Without running the R files in sequence YOU WILL NOT get the data output. Running in sequence is essential.
+# Look at your default assay
+DefaultAssay(object = alk3n3.integrated)
 
-# PCA analysis
-alk3n3.combined <- RunPCA(object = alk3n3.combined, features = VariableFeatures(object = alk3n3.combined))
+# Change default assay to integrated, save information in the "integrated" assay
+DefaultAssay(object = alk3n3.integrated) <- "integrated"
+
+# PCA analysis data will be stored in the "reductions' slot
+alk3n3.integrated <- RunPCA(object = alk3n3.integrated, features = VariableFeatures(object = alk3n3.integrated))
 
 # Examine and visualize PCA results a few different ways
-print(x = alk3n3.combined[["pca"]], dims = 1:5, nfeatures = 5)
-VizDimLoadings(object = alk3n3.combined, dims = 1:2, reduction = "pca")
-DimPlot(object = alk3n3.combined, reduction = "pca")
-DimHeatmap(object = alk3n3.combined, dims = 1, cells = 500, balanced = TRUE)
-DimHeatmap(object = alk3n3.combined, dims = 1:15, cells = 500, balanced = TRUE)
+print(x = alk3n3.integrated[["pca"]], dims = 1:5, nfeatures = 5)
+VizDimLoadings(object = alk3n3.integrated, dims = 1:2, reduction = "pca")
+DimPlot(object = alk3n3.integrated, reduction = "pca")
+DimHeatmap(object = alk3n3.integrated, dims = 1, cells = 500, balanced = TRUE)
+DimHeatmap(object = alk3n3.integrated, dims = 1:15, cells = 500, balanced = TRUE)
 
 # Using JacStraw plots to visualize LDR measurements
 # NOTE: This process can take a long time for big datasets, comment out for expediency. More
-# approximate techniques such as those implemented in ElbowPlot() can be used to reduce
-# computation time
-alk3n3.combined <- JackStraw(object = alk3n3.combined, num.replicate = 100)
-alk3n3.combined <- ScoreJackStraw(object = alk3n3.combined, dims = 1:20)
-JackStrawPlot(object = alk3n3.combined, dims = 1:15)
+# approximate techniques such as those implemented in ElbowPlot() can be used to reduce computation time
+# alk3n3.integrated <- JackStraw(object = alk3n3.integrated, num.replicate = 100)
+# alk3n3.integrated <- ScoreJackStraw(object = alk3n3.integrated, dims = 1:10)
+# JackStrawPlot(object = alk3n3.integrated, dims = 1:10)
 
 # Elbow plot
-ElbowPlot(object = alk3n3.combined)
+ElbowPlot(object = alk3n3.integrated)
 
 # Clustering
-alk3n3.combined <- FindNeighbors(object = alk3n3.combined, dims = 1:10)
-alk3n3.combined <- FindClusters(object = alk3n3.combined, resolution = 0.4)
-
-# Look at cluster IDs of the first 5 cells
-head(x = Idents(object = alk3n3.combined), 5)
+alk3n3.integrated <- FindNeighbors(object = alk3n3.integrated, dims = 1:20)
+alk3n3.integrated <- FindClusters(object = alk3n3.integrated, resolution = 0.4)
 
 # NON-LINEAR DIMENSIONALITY REDUCTION ####
-# Using tSNE for dimensionality eduction
-alk3n3.combined <- RunTSNE(object = alk3n3.combined, dims = 1:10)
+# RunUMAP
+# reticulate::py_install(packages = 'umap-learn')
 
+# We ran RunUMAP on the parameters: metric = cosine and umap.method = UWOT
+# you are welcome to try UMAp-learn, the interpretation of the outcome doesnt
+# adversally affect the cell clustering on superficial observation
+alk3n3.integrated <- RunUMAP(alk3n3.integrated, dims = 1:20, metric = 'cosine', umap.method = 'uwot')
+
+# Visualization
 # Note: you can set `label = TRUE` or use the LabelClusters function to help label
 # individual clusters
-DimPlot(object = alk3n3.combined, reduction = "tsne", pt.size = 2)
+# UMAP Visualization
+p20 <- DimPlot(alk3n3.integrated, group.by = c("orig.ident", "integrated_snn_res.0.4"), combine = FALSE, pt.size = 1)
+p20 <- lapply(X = p20, FUN = function(x) x + theme(legend.position = "top") + guides(color = guide_legend(nrow = 3, byrow = TRUE, override.aes = list(size = 3))))
+CombinePlots(p20)
 
 # DIFFERENTIALLY EXPRESSED-GENE ANALYSIS ####
 # Find markers for every cluster compared to all remaining cells, report only the positive ones
-# Here we defin a DE gene as a gene which has:
-# Fold Change of >2
-# Atleast 50% of cells express that gene
+# Here we define a DE gene as a gene which has:
+# Fold Change of >1.5
+# Atleast 10% of cells express that gene
 # p value < 0.001
-alk3n3.combined.markers <- FindAllMarkers(object = alk3n3.combined, only.pos = TRUE, min.pct = 0.5, logfc.threshold = 0.7)
-alk3n3.combined.markers %>% group_by(cluster) %>% top_n(n = 2, wt = avg_logFC)
-write.csv(alk3n3.combined.markers, 'alk3n3.combined.markers.csv')
+alk3n3.integrated.markers <- FindAllMarkers(object = alk3n3.integrated, only.pos = TRUE, logfc.threshold = 0.41, slot = 'data', test.use = 'wilcox')
+alk3n3.integrated.markers %>% group_by(cluster) %>% top_n(n = 2, wt = avg_logFC)
+write.csv(alk3n3.integrated.markers, 'C:/Users/mxq52/Box/NPOD PAPER/Round 4/R_files/alk3n3.integrated.markers.csv')
+
+# Look at your default assay
+DefaultAssay(object = alk3n3.integrated)
+
+# Change default assay to RNA, to visualize data on graph
+# You can toggle between integrated, SCT and RNA to see different expression profiles/different normalizations
+DefaultAssay(object = alk3n3.integrated) <- "RNA"
 
 # You can look at the expression of a particular gene across an entire data set here
-VlnPlot(object = alk3n3.combined, features = c("COL1A1"))
+# As an example we need to remove all mesenchymal cells from the analysis
+# We use COL1A1 and THY1 as mesenchymal identifiers
+# Violin plot
+VlnPlot(object = alk3n3.integrated, features = c("THY1"), group.by = "integrated_snn_res.0.4", ncol = 1)
+
+# UMAP expression plot
+FeaturePlot(object = alk3n3.integrated, 
+            features = c("CPA2"),
+            pt.size = 2,
+            cols = c("darkgrey", "red"),
+            min.cutoff = 0,
+            max.cutoff = 100,
+            order = TRUE)
+
 
 # Look at a heatmap of top 10 most differentially expressed genes
-top10 <- alk3n3.combined.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
-DoHeatmap(object = alk3n3.combined, features = top10$gene) + NoLegend()
+# Change default assay to RNA, save information in the "RNA" assay
+DefaultAssay(object = alk3n3.integrated) <- "integrated"
+
+# Create heatmap using doheatmap
+top100.all <- alk3n3.integrated.markers %>% group_by(cluster) %>% top_n(n = 100, wt = avg_logFC)
+DoHeatmap(object = alk3n3.integrated, features = top100.all$gene) + NoLegend()
+
+# Save RDS file
+# saveRDS(alk3n3.integrated, file = "C:/Users/mxq52/Box/NPOD PAPER/Round 4/R_files/alk3n3.integrated.code3.rds")
 
 ################## #
 ################## #
