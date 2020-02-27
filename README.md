@@ -56,7 +56,7 @@ These are the input files for the Cellranger software.
 This contains data outputs of Cellranger v3.0.1, which was run using default settings. Code used to analyze data is a part of this repository. This data contains filtered/unfiltered count files for gene expression across barcodes/cells. 
 
 #### Data analysis of ALK3n3 dataset
-Preliminary data-analyses involving n=3 de-identified human exocrine-pancreata derived ALK3+ cells are included in this file. This includes data thresholding, normalization, subsetting, linear dimensionality reduction (PCA), non-linear multimodal dimensionality reduction (PCA/tSNE), clustering, and data visualization.
+Preliminary data-analyses involving n=3 de-identified human exocrine-pancreata derived ALK3+ cells are included in this file. This includes data thresholding, normalization, subsetting, linear dimensionality reduction (PCA), non-linear multimodal dimensionality reduction (PCA/UMAP), clustering, and data visualization.
 
 #### Data analysis of integrated-dataset
 In order to understand where our cells map against other pancretic cells, we mapped our cells against a human pancreas dataset for single-cell gene transcription. In doing so, we were able to understand where our cells reside in the context of other neighbouring pancreatic cells. We hope to use our data to expand the human pancreas single-cell transcriptional profile. These data were downloaded from a pre-analyzed gene expression matrix created as part of Seurat tutorial, which can be found and [downloaded from here](https://satijalab.org/seurat/v3.0/pancreas_integration_label_transfer.html).
