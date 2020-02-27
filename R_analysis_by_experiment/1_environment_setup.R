@@ -1,10 +1,11 @@
 # DESCRIPTION ####
 # The following code will install all dependencies in R allowing for analysis to be performed on the alk3n3 dataset
 
-# R v3.5.3 (x64 bit) and RStudio v1.2.1335 (x64 bit) were used for running this code (see readme on how to install)
+# In order to utilize umap, which will work within a python v3.7 environment, install Anaconda3 in windows
+# Install and run R v3.5.3 (x64 bit) and RStudio v1.2.1335 (x64 bit) for running this code (see readme on how to install)
 # Seurat is a multimodal single Cell RNA seq analysis algorithm created by
 # The Satija Lab. For more information please see: https://satijalab.org/seurat/
-# Monocle is a psudotempora differentiation trajectory analysis program crated by
+# Monocle is a psudotemporal differentiation trajectory analysis program crated by
 # The Trapnell Lab. For more information please see: http://cole-trapnell-lab.github.io/monocle-release/
 
 # INSTALLATION ####
@@ -23,16 +24,25 @@ install.packages("cowplot")
 install.packages('ggrepel')
 install.packages("R.utils")
 install.packages("gridExtra")
+install.packages("Seurat")
 install.packages("plotly")
+install.packages("clustree")
+install.packages('multtest')
 
 # Install the scRNAseq analysis package Seurat
 install.packages('Seurat') #This installs Seurat v3.0.0 as of 5/20/2019, if Seurat is updated direct installation to v3.0.0
 
 # Install the scRNAseq pseudotemporal analysis package Monocle
-source("http://bioconductor.org/biocLite.R") #Monocle v2.8.0 is used
-biocLite()
-biocLite("monocle")
+# source("http://bioconductor.org/biocLite.R") #Monocle v2.8.0 is used
+# biocLite()
+# biocLite("monocle")
 
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("monocle")
+
+# Install multtest for Seurat
+BiocManager::install("multtest")
 
 # LOAD LIBRARIES ####
 # Restart Rstudio or R
@@ -47,6 +57,7 @@ library(dplyr)
 library(Seurat)
 library(monocle)
 library(plotly)
+library(clustree)
 
 # CONFIRM CORRECT INSTALL ####
 # Confirm package version of Seurat and Monocle
