@@ -28,11 +28,21 @@ A complete script of analysis performed on the entire alk3n3 dataset (alk3n3 or 
 ### 4_alk3n3NOMES_analysis.R:
 A set of R code which allows for mesenchymal clusters to be subsetted out of the analysis. The resulting dataset, is what has been used throughout the analysis. 
 
-### 5_alk3n3_integration_with_cellatlas.R:
+### 5_alk3n3_alk3n3MuraroGrun.R:
 A set of code which allows for the integration of the alk3n3 dataset into a islet pancreas single cell RNAseq gene expression atlas.
 
-### 6_alk3n3_integration_visualization.R:
-A set of code allowing for the visualization of the integrative analysis performed previously.
+### 6_3DUMAP.R:
+A set of code allowing for the visualization of the integrative analysis performed previously. This uses the 3D-UMAP feature, using the RShiny derived package plotl.
 
-### 7_alk3n3_integration_3Dvisualization.R:
-A set of code used to allow the viewing of 3D tSNE visuals using the RShiny derived package plotly.
+### 7_MAP_alk3n3.R:
+The purpose of this code is to perform monocle analysis of the alk3n3 dataset
+
+### 8_MAP_integrated.R:
+The purpose of this code is to perform monocle analysis of the integrated dataset, where our dataset is integrated against a single-cell atlas.
+
+### 9_MAP_integrated_ducto-A.R:
+The purpose of this code is to perform monocle analysis of the integrated dataset, where our dataset's ducto-acinar axis is mapped.
+
+### 10_MAP_integrated_ducto-E.R:
+The purpose of this code is to perform monocle analysis of the integrated dataset, where our dataset's ducto-endocrine axis is mapped.
+
