@@ -122,6 +122,9 @@ In order to understand where our cells map against other pancretic cells, we map
 ### Hardware and OS environment for running Velocyto
 Under construction
 
+# Citation
+Qadir, M.M.F., Alvarez-Cubela, S., Klein, D., Van Dijk, J., Anquela, R.M., Lanzoni, G., Sadiq, S., Moreno-Hernandez, Y.B., Navarro-Rubio, B., Garcia, M.T., Diaz, A., Johnson, K., Sant, D., Ricordi, C., Griswold, T., Pastori, R.L., Dominguez-bendala, J. (2020) Single cell resolution analysis of the human pancreatic ductal progenitor cell niche. (In press: Proceedings of the National Academy of Sciences)
+
 # Contributors
 1. Mirza Muhammad Fahd Qadir - [Github](https://github.com/Dragonmasterx87) - [University of Miami](http://biomed.med.miami.edu/graduate-programs/molecular-cell-and-developmental-biology/student-profiles) - to contact please [Email](mailto:fahd.qadir@med.miami.edu)
 2. The JDB Lab - [Github](https://github.com/JDBLab) - [Diabetes Research Institute, UM](https://www.diabetesresearch.org/juan-dominguez-bendala)
