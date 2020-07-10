@@ -223,7 +223,7 @@ pancreas.integrated <- RunUMAP(pancreas.integrated, dims = 1:10) # 07/10/2020 be
 # In order to get the same distribution of UMAP coordinates as that shown in Qadir et al., 2020: PNAS please use
 # the following uwot version: uwot_0.1.4.tar.gz	2019-09-23 10:20	79K
 # There are multiple ways to do this, I like to uninstall uwot, and then re-install using devtools:
-# install_url(https://cran.r-project.org/src/contrib/Archive/uwot/uwot_0.1.4.tar.gz)
+# install_url("https://cran.r-project.org/src/contrib/Archive/uwot/uwot_0.1.4.tar.gz")
 # You will have to 'downgrade' uwot so that UMAP can generate similar coordinates as that shown in the paper.
 
 # Change default assay to RNA for variable gene calculation, remember to save in RNA slot
