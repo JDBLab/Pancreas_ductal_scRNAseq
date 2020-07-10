@@ -117,7 +117,8 @@ DefaultAssay(object = alk3n3.integrated) <- "integrated"
 
 # Create heatmap using doheatmap
 top100.all <- alk3n3.integrated.markers %>% group_by(cluster) %>% top_n(n = 100, wt = avg_logFC)
-DoHeatmap(object = alk3n3.integrated, features = top100.all$gene) + NoLegend()
+DoHeatmap(object = alk3n3.integrated, features = top100.all$gene, label = FALSE) + NoLegend()
+# Heatmap run error look here: https://stackoverflow.com/questions/60869986/doheatmap-function-seurat-error-in-dataframe-arguments-imply-differing-number
 
 # Save RDS file
 # saveRDS(alk3n3.integrated, file = "C:/Users/mxq52/Box/NPOD PAPER/Round 4/R_files/alk3n3.integrated.code3.rds")
