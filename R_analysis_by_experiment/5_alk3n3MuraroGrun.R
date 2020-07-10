@@ -218,7 +218,11 @@ PlotClusterTree(pancreas.integrated)
 
 # Step 10: non-linear dimensionality assessment ####
 # Run UMAP calculations
-pancreas.integrated <- RunUMAP(pancreas.integrated, dims = 1:10)
+pancreas.integrated <- RunUMAP(pancreas.integrated, dims = 1:10) # 07/10/2020 before running read note below
+# Please note, as Seurat has upgraded, UMAP's uwot paramter has changed please see here: https://cran.r-project.org/src/contrib/Archive/uwot/
+# In order to get the same distribution of UMAP coordinates as that shown in Qadir et al., 2020: PNAS please use
+# the following uwot version: uwot_0.1.4.tar.gz	2019-09-23 10:20	79K
+# You will have to 'downgrade' uwot so that UMAP can generate similar coordinates as that shown in the paper.
 
 # Change default assay to RNA for variable gene calculation, remember to save in RNA slot
 # This is necessary to look at normalised gene expression from the RNA slot, looking at raw counts is incorrect.
