@@ -227,9 +227,11 @@ top30.nomes <- alk3n3.integrated.nomes.markers %>% group_by(cluster) %>% top_n(n
 DoHeatmap(object = alk3n3.integrated.nomes, 
           features = top30.nomes$gene, 
           disp.min = -2.5, 
-          disp.max = 2.5) + scale_fill_gradientn(colors = colorRampPalette(c("#0200ad", 
-                                                                             "#fbfcbd", 
-                                                                             "#ff0000"))(256))
+          disp.max = 2.5,
+          label = FALSE) + scale_fill_gradientn(colors = colorRampPalette(c("#0200ad", 
+                                                                            "#fbfcbd", 
+                                                                            "#ff0000"))(256))
+# correction for heatmap after seurat 3.1.1, run using label = FALSE
 
 # Dot plots - the size of the dot corresponds to the percentage of cells
 # expressing the gene in each cluster. The color represents the average
